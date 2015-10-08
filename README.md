@@ -1,7 +1,8 @@
 docker-socket-socat
 ===================
 
-Useful to hit other containers during `docker build`.
+A simple container to expose `/var/lib/docker.sock` on port 2375. Useful to hit
+the Docker daemon during `docker build`.
 
 As of 1.8, names of containers are automatically inserted into /etc/hosts, so
 if you run this container with
