@@ -27,5 +27,6 @@ build tools!?
 Security
 --------
 
-Running this gives anyone on your machine root access (exactly the same as if
-they have access to run Docker already).
+Running this gives anyone on your machine root access.
+
+If they have the ability to run arbitrary containers, they already had this.
