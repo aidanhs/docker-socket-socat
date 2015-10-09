@@ -22,7 +22,8 @@ and it'll work!
 This is great if you're using a Dockerfile to drive an Ansible playbook which
 uses the Docker connection plugin. Or for any build tool to drive Docker
 really - if your apps can run in a reproducible environment, why not your image
-build tools!?
+build tools!? One amusing thought is to use a Dockerfile to run a bunch of other
+Dockerfiles - everything perfectly encapsulated.
 
 Security
 --------
