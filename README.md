@@ -11,10 +11,11 @@ if you run this container with
 docker run -d -v /var/run/docker.sock:/docker.sock --name dsocket aidanhs/socket-socat
 ```
 
-you can have an instruction like this in your Dockerfile
+you can have instructions like this in your Dockerfile
 
 ```
-RUN docker -H tcp://dsocket:2375 ps
+ENV DOCKER_HOST tcp://dsocket:2375
+RUN docker ps
 ```
 
 and it'll work!
