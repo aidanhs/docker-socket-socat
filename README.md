@@ -8,7 +8,7 @@ As of 1.8, names of containers are automatically inserted into /etc/hosts, so
 if you run this container with
 
 ```
-docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name dsocket aidanhs/socket-socat
+docker run -d -v /var/run/docker.sock:/docker.sock --name dsocket aidanhs/socket-socat
 ```
 
 you can have an instruction like this in your Dockerfile
